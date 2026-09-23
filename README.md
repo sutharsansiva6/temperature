@@ -1,47 +1,32 @@
-# Event Management Portal — Backend
+# Event Management Portal — Frontend
 
-A simple REST API built with Node.js and Express.js for managing events.  
-This is a college mini project — no database is used. All data is stored in-memory.
+A simple React-based frontend for managing events.  
+This is a college mini project with clean, responsive UI.
 
 ## Tech Stack
 
-- Node.js
-- Express.js
-- In-memory data storage (JavaScript arrays)
+- React 18
+- React Router v6
+- Axios
+- Vite
+- Vanilla CSS
 
 ## Getting Started
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
-Server runs on **http://localhost:5000**
+App runs on **http://localhost:5173**
 
-## Sample Credentials
+> Make sure the backend server is running on port 5000 before starting the frontend.
 
-| Role  | Email              | Password |
-|-------|--------------------|----------|
-| Admin | admin@gmail.com    | admin123 |
-| User  | john@example.com   | john123  |
+## Features
 
-## API Endpoints
-
-### Auth
-| Method | Endpoint            | Description       | Auth Required |
-|--------|---------------------|-------------------|---------------|
-| POST   | /api/auth/register  | Register new user | No            |
-| POST   | /api/auth/login     | Login             | No            |
-| GET    | /api/auth/profile   | Get profile       | Yes           |
-| PUT    | /api/auth/profile   | Update profile    | Yes           |
-
-### Events
-| Method | Endpoint           | Description        | Auth Required |
-|--------|--------------------|--------------------|---------------|
-| GET    | /api/events        | List all events    | No            |
-| GET    | /api/events/:id    | Get event details  | No            |
-| POST   | /api/events        | Create event       | Yes           |
-| PUT    | /api/events/:id    | Update event       | Yes           |
-| DELETE | /api/events/:id    | Delete event       | Yes           |
-
-> **Note:** Data resets when the server restarts since everything is stored in memory.
+- Admin & User Login/Registration
+- Dashboard with event listing and search
+- Create, Edit, Delete events
+- Event details page
+- User profile page
+- Responsive design
