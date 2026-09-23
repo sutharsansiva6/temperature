@@ -1,32 +1,19 @@
-# Event Management Portal — Frontend
+# React + Vite
 
-A simple React-based frontend for managing events.  
-This is a college mini project with clean, responsive UI.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Tech Stack
+Currently, two official plugins are available:
 
-- React 18
-- React Router v6
-- Axios
-- Vite
-- Vanilla CSS
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Getting Started
+## React Compiler
 
-```bash
-npm install
-npm run dev
-```
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
 
-App runs on **http://localhost:5173**
+Note: This will impact Vite dev & build performances.
+You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
 
-> Make sure the backend server is running on port 5000 before starting the frontend.
+## Expanding the ESLint configuration
 
-## Features
-
-- Admin & User Login/Registration
-- Dashboard with event listing and search
-- Create, Edit, Delete events
-- Event details page
-- User profile page
-- Responsive design
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
